@@ -1,0 +1,12 @@
+<%= link_to @post.blogger.name, blogger_path(@post.blogger) %>
+<br>
+<br>
+<%= link_to @post.destination.name, destination_path(@post.destination) %>
+
+
+<%= form_for @post do |f| %>
+    <%= f.hidden_field :likes, value: @post.increment_likes %>
+
+    <%= f.submit %>
+
+<% end %>

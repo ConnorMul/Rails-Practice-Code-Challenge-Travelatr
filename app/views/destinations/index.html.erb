@@ -1,0 +1,4 @@
+<% @destinations.each do |dest| %>
+     <h3><%= link_to dest.name, destination_path(dest) %></h3>
+     <p><%= dest.country %> </p>
+<% end %>

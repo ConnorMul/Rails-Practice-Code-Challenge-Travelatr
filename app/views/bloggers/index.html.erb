@@ -1,0 +1,6 @@
+<% @bloggers.each do |blogger| %>
+     <h3><%= link_to blogger.name, blogger_path(blogger) %></h3>
+     <p><%= blogger.age %> </p>
+    <p><%= blogger.bio %> </p>
+      
+  <% end %>
